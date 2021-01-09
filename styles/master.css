@@ -1,0 +1,161 @@
+/* Global */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *::after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+.container {
+    margin: 0 auto;
+    max-width: 80%;
+}
+.header-bar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
+}
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 3.4rem;
+}
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 2.6rem;
+}
+img {
+    max-width: 100%;
+}
+hr {
+    width: 100%;
+}
+/* Utilities */
+.section {
+    margin: 2rem auto;
+}
+.fw-300 {
+    font-weight: 300;
+    text-align: center;
+}
+.d-block {
+    display: block !important;
+}
+.centered-content {
+    max-width: 800px;
+}
+.dark-layer {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+/* Navigation */
+.navigation a {
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.8rem;
+    margin-right: 2rem;
+    text-decoration: none;
+}
+.navigation a:last-of-type {
+    margin-right: 0;
+}
+.navigation a:hover {
+    color: rgba(42, 236, 221, 1);
+}
+/* Footer */
+.site-footer {
+    background-color: rgba(51, 51, 51, 1);
+    margin: 0;
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem 0;
+}
+.top-footer-section {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+}
+.copyright {
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+}
+.bottom-footer-section {
+    padding-top: 1.5rem;
+}
+.social-icons {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.social-icons i {
+    color: rgba(255, 255, 255, 1);
+    font-size: 3rem;
+    padding: 0 3rem;
+}
+/* Header */
+.site-header {
+    background-color: rgba(51, 51, 51, 1);
+    padding: 1rem 0;
+    width: 100%;
+}
+.header-logo {
+    max-width: 300px;
+}
+/* Header - Index */
+.site-header.index {
+    background-image: url(../media/index-header.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    min-height: 60rem;
+    position: relative;
+}
+.header-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.header-content h1 {
+    color: rgba(255, 255, 255, 1);
+    line-height: 2;
+    max-width: 60rem;
+    padding: 0 0 2rem;
+}
+/* Core Disciplines - Index */
+.core-disciplines {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.core-disciplines img {
+    flex-basis: calc(60% - 2rem);
+    margin-bottom: 5rem;
+    max-width: 60%;
+}
+.discipline-text {
+    flex-basis: calc(40% - 3rem);
+    margin-left: 0;
+    margin-right: 3rem;
+    text-align: justify;
+}
+.discipline-text:nth-child(3) {
+    margin-left: 3rem;
+    margin-right: 0;
+}
