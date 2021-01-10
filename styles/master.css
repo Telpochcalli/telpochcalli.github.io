@@ -146,6 +146,7 @@ hr {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    overflow: hidden;
 }
 .core-disciplines img {
     flex-basis: calc(60% - 2rem);
