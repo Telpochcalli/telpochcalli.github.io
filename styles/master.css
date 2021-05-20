@@ -62,6 +62,9 @@ hr {
     top: 0;
     width: 100%;
 }
+.default {
+    padding: 5em;
+}
 /* Navigation */
 .navigation {
     display: flex;
@@ -127,6 +130,11 @@ hr {
     background-size: cover;
     height: 100vh;
     min-height: 60rem;
+    position: relative;
+}
+.site-header.normal {
+    height: 15rem;
+    min-height: 10rem;
     position: relative;
 }
 .header-content {

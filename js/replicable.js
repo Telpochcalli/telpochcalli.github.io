@@ -1,7 +1,7 @@
 // Navigation Data
 var navigationData = [{
       title: "Robomaster",
-      href: "robomaster.html"
+      href: "https://www.robomaster.com/en-US"
     },
     {
       title: "About Us",
