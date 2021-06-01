@@ -1,4 +1,17 @@
 /* Global */
+
+:root {
+    --main-bkg-highlight: #2C2C2C;
+    --main-bkg: #D5D5D5;
+    --main-button: #12546A;
+    --main-button-hover: #0c4355;
+    --main-special-blue: #5CC0E1;
+
+    --transparent-black-bkg: rgba(0, 0, 0, 0.3);
+    --white: white;
+    --footer: rgba(51, 51, 51, 1);
+}
+
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -44,6 +57,17 @@ hr {
 .section {
     margin: 2rem auto;
 }
+.section button {
+    background-color: var(--main-button);
+    color: var(--main-bkg);
+    padding: 2rem 5rem 2rem 5rem;
+    font-size: 1.4em;
+    border: 0;
+    border-radius: 1rem;
+}
+.section button:hover {
+    background-color: var(--main-button-hover);
+}
 .fw-300 {
     font-weight: 300;
     text-align: center;
@@ -55,7 +79,7 @@ hr {
     max-width: 800px;
 }
 .dark-layer {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: var(--transparent-black-bkg);
     height: 100%;
     left: 0;
     position: absolute;
@@ -71,17 +95,17 @@ hr {
     justify-content: space-between;
 }
 .navigation a {
-    color: rgba(255, 255, 255, 1);
+    color: var(--white);
     font-size: 1.8rem;
     margin: 0 1rem;
     text-decoration: none;
 }
 .navigation a:hover {
-    color: rgba(42, 236, 221, 1);
+    color: var(--main-special-blue);
 }
 /* Footer */
 .site-footer {
-    background-color: rgba(51, 51, 51, 1);
+    background-color: var(--footer);
     margin: 0;
 }
 .footer-container {
@@ -97,7 +121,7 @@ hr {
     padding-bottom: 1.5rem;
 }
 .copyright {
-    color: rgba(255, 255, 255, 1);
+    color: var(--white);
     margin: 0;
 }
 .bottom-footer-section {
@@ -109,13 +133,13 @@ hr {
     justify-content: center;
 }
 .social-icons i {
-    color: rgba(255, 255, 255, 1);
+    color: var(--white);
     font-size: 3rem;
     padding: 0 3rem;
 }
 /* Header */
 .site-header {
-    background-color: rgba(51, 51, 51, 1);
+    background-color: var(--main-bkg-highlight);
     padding: 1rem 0;
     width: 100%;
 }
@@ -144,7 +168,7 @@ hr {
     justify-content: space-between;
 }
 .header-content h1 {
-    color: rgba(255, 255, 255, 1);
+    color: var(--white);
     line-height: 2;
     max-width: 60rem;
     padding: 0 0 2rem;
