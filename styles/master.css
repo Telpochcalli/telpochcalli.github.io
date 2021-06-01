@@ -124,7 +124,7 @@ hr {
 }
 /* Header - Index */
 .site-header.index {
-    background-image: url(../media/index-header.jpg);
+    background-image: url(../media/index-header.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
