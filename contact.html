@@ -32,6 +32,16 @@
         <meta name="theme-color" content="#ffffff">
         <link rel="shortcut icon" href="fabicon/favicon.ico" type="image/x-icon">
         <link rel="icon" href="fabicon/favicon.ico" type="image/x-icon">
+
+
+        <!-- Map stuff -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
     </head>
     <body>
         <script>
@@ -52,8 +62,26 @@
             <div class="default">
                 <h2 class="fw-300">Contact us</h2>
 
-                <p>Have any questions? We can answer them!</p>
-                <p>we are a small team though, we will take a while to answer.</p>
+                <div id="mapid"> <script src="js/maps.js"></script> </div>
+
+                <h1>Have any questions? We can answer them!</h1>
+                <p>You can contact us in may ways. You are more than welcome to contact us at anytime and for any reason, we will do our best to answer as best and quickly as possible. If you want to learn more about us, follow us on social media!</p>
+                <p>However, we are a small team and we will take a while to answer.</p>
+
+                <p>If you wish, you can send us an email to: <a href="mailto:telpochcalli.robotics@gmail.com">telpochcalli.robotics@gmail.com</a></p>
+
+                <p>Otherwise, if you wish to, you can follow us on our social media, we have the following options:</p>
+
+                <h1>
+                    <a target="_blank" href="https://twitter.com/TelpochcalliRM"><i class="fa fa-twitter-square"></i></a>
+                    <a target="_blank" href="https://instagram.com/telpochcalli_robotics/"><i class="fa fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/telpochcalli.robomaster/"><i class="fa fa-facebook-square"></i></a>
+                    <a target="_blank" href="https://github.com/orgs/Telpochcalli"><i class="fa fa-github-square"></i></a>
+                </h1>
+
+                <p>If you want to be part of our community, and follow us closer, we have our discord server, where we chat, share memes, and we can answer questions quicker:</p>
+
+                <button onclick="window.location.href='https://discord.com/invite/tCcaADAM7G';">Join our discord!</button>
             </div>
         </section>
         <main>

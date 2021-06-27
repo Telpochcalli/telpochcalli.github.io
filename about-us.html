@@ -32,6 +32,15 @@
         <meta name="theme-color" content="#ffffff">
         <link rel="shortcut icon" href="fabicon/favicon.ico" type="image/x-icon">
         <link rel="icon" href="fabicon/favicon.ico" type="image/x-icon">
+
+        <!-- Map stuff -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
     </head>
     <body>
         <script>
@@ -54,13 +63,33 @@
                 <p>Images go here</p>
             </div>
             <div class="default">
+                <h2 class="fw-300">our team</h2>
+                <p>We are a mexican team, built from the ground up by ourselves, we want to bring inspiration to more Mexicans, and get more people excited about robotics and all it has to offer.</p>
+
+                <div id="mapid"> <script src="js/maps.js"></script> </div>
+
+                <p>Want to get in contact?</p>
+
+                <button onclick="window.location.href='contact.html';">Contact Us!</button>
+            </div>
+            <div class="default">
                 <h2 class="fw-300">Our Story</h2>
                 <p>In the search for more, we encountered Robomaster. <br>The founders came from the robotics team Taman Keet, a FIRST robotics team. From there, most of the Telpochcalli founders decided to set off in the search for a better and more challenging competition. We gathered ourselves and started from scratch, in the middle of a pandemic. <br>With only 11 people and a dream, we started planing everything, reading the documentation, gathering resources, and forming an official team.</p>
-                <p>It wasn't easy though, with no previous knowledge of how to start, and no resources, we had to start a team from practically thin air. But little by little, we finally built our first robot.</p>
+                <p>It wasn't easy though, with no previous knowledge of how to start, and no resources, we had to start a team from practically thin air. But little by little, we finally built our first robot: Yuri.</p>
+
+                <img src="media/white front right shoot.png" alt="Our first robot: Yuri">
+
+                <h3>Yuri: The start of something big!</h3>
+
+                <p>Knowing nothing, we built Yuri, learning everything as we went by. Fellow teams from north america helped us learn, and eventually, we managed to finish our first robot. We where not expecting much, but after we finished building it, and had decent enough software, we started play... I mean, testing it, fixed some things here and there, and got ready for the competition. <br>And to the competition we went. However, as Covid had stoke, we couldn't go to china, therefore, we went to the RMNA competition. Not expecting much, we went to play the 1v1.</p>
+
+                <p>After the competition, we won first place on the 1v1 matches, something that took us completely by surprise. We wouldn't have done anything as near as that if it was not for all of the NA RoboMaster teams that helped us, our awesome Mentor Ariel, that helped solve some problems, and our amazing team! We are very graceful for each and everyone of you, and we are open in case a new team now needs us.</p>
             </div>
             <div class="default">
                 <h2 class="fw-300">Where we are</h2>
-                <p>We proudly have crafted our first robot, and are going to compete on the coming RMNA competition!</p>
+                <p>We are currently preparing to build 2 more robots, so that we can participate on the 3v3 battles. We do not have much info as of now, but you can go to our blog to get more up to date news.</p>
+
+                <button onclick="window.location.href='blog.html';">Blog</button>
             </div>
             <div class="default">
                 <h2 class="fw-300">Where we are going</h2>
@@ -68,12 +97,27 @@
             </div>
             <div class="default">
                 <h2 class="fw-300">Meet the robots</h2>
+                <p>As of now, we only have one robot:</p>
+
+                <div class="robotDesc">
+                    <div class="robotImg"> <img src="media/Yuri full.png" alt=""> </div>
+                    
+                    <div class="robotInfo">
+                        <h1>Yuri Gagarin</h1>
+                        <p><strong>Type:</strong> Standard Robot</p>
+                        <p><strong>Date of creation:</strong> Early 2021</p>
+                        <p>Yuri is our first robot, it will live on for generations.</p>
+                    </div>
+                </div>
+
                 <p>Here is a description of all the robots we need to build:</p>
                 <!-- TODO Agregar una tabla de los robots, como se llaman, funcion, y si lo tenemos o no -->
+
+                
             </div>
             <div class="default">
                 <h2 class="fw-300">Like what we do?</h2>
-                <p>We are a hardworking team, but we need more than just people. If you wish to support us, you can <a href="#sponsors.html">become a sponsor</a>, or share to other people on social media!</p>
+                <p>We are a hardworking team, but we need more than just people. If you wish to support us, you can <a href="sponsors.html">become a sponsor</a>, or share to other people on social media!</p>
             </div>
         </section>
         <main>

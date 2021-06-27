@@ -8,6 +8,10 @@ var navigationData = [{
       href: "about-us.html"
     },
     {
+      title: "Support us",
+      href: "sponsors.html"
+    },
+    {
       title: "Blog",
       href: "blog.html"
     },
