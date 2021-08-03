@@ -16,6 +16,10 @@ var navigationData = [{
       href: "blog.html"
     },
     {
+      title: "Become a member",
+      href: "newMember.html"
+    },
+    {
       title: "Contact Us",
       href: "contact.html"
     }]
