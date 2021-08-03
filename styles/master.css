@@ -19,6 +19,8 @@
     --color-article-news: #5CC0E1;
     --color-article-default: rgb(160, 160, 160);
     --color-article-use: var(--color-article-default);
+
+    --color-transparent: rgba(255, 255, 255, 0);
 }
 
 html {
@@ -40,9 +42,11 @@ body {
 .header-bar {
     align-items: center;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     padding: 3rem 0;
+
+    color: var(--color-transparent);
 }
 h1 {
     font-size: 3.8rem;
@@ -108,10 +112,15 @@ hr {
     font-size: 1.8rem;
     margin: 0 1rem;
     text-decoration: none;
+    flex-wrap: nowrap;
 }
 .navigation a:hover {
     color: var(--main-special-blue);
 }
+
+/* Hamburger menu */
+#header-bar label, #hamburger { display: none; }
+
 /* Footer */
 .site-footer {
     background-color: var(--footer);
@@ -153,7 +162,8 @@ hr {
     width: 100%;
 }
 .header-logo {
-    max-width: 300px;
+    width: 500px;
+    max-width: 80%;
 }
 /* Header - Index */
 .site-header.index {
@@ -319,4 +329,42 @@ hr {
 
 .robotDesc .robotInfo p{
     font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+    /* BREAK INTO VERTICAL MENU */
+    .navigation a {
+      box-sizing: border-box;
+      
+      display: block;
+      width: 100%;
+      border-top: 1px solid #333;
+      background: var(--main-bkg-highlight);
+    }
+    .site-header.normal {
+        position: sticky;
+        top: 0;
+    }
+    /* SHOW HAMBURGER ICON */
+    .header-bar label { 
+      display: block; 
+      color:var(--white);
+      font-style: normal;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+    .header-bar{
+        display: flex;
+    }
+    .header-logo{
+        display: flex;
+    }
+  
+    /* TOGGLE SHOW/HIDE MENU */
+    .navigation { 
+        display: none; 
+    }
+    .header-bar input:checked ~ .navigation { 
+        display: block; 
+    }
 }
