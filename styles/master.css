@@ -21,12 +21,58 @@
     --color-article-use: var(--color-article-default);
 
     --color-transparent: rgba(255, 255, 255, 0);
+
+    --color-htmlBackground: white;
+    --color-htmlText: rgb(32, 31, 31);
+    --color-aNotClicked: rgb(5, 85, 105);
+    --color-aHover: rgb(12, 100, 122);
+    --color-aClicked: rgb(5, 58, 71);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --main-bkg-highlight: #2C2C2C;
+        --main-bkg: #D5D5D5;
+        --main-button: #12546A;
+        --main-button-hover: #1c6b85;
+
+        /* Articles */
+        --color-article-bkg: rgb(63, 63, 63);
+        --color-article-engineer: rgb(115, 199, 67);
+        --color-article-guest: rgb(241, 122, 82);
+        --color-article-media: #aa360f;
+        --color-article-programer: #356b7e;
+        --color-article-news: #21b7e9;
+        --color-article-default: rgb(146, 146, 146);
+        --color-article-use: var(--color-article-default);
+
+        --color-htmlBackground: rgb(48, 48, 48);
+        --color-htmlText: rgb(221, 216, 216);
+        --color-aNotClicked: rgb(46, 182, 216);
+        --color-aHover: rgb(66, 201, 235);
+        --color-aClicked: rgb(28, 140, 168);
+    }
 }
 
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    background: var(--color-htmlBackground);
+    color: var(--color-htmlText);
 }
+
+a {
+    color: var(--color-aNotClicked);
+}
+
+a:hover {
+    color: var(--color-aHover);
+}
+
+a:visited {
+    color: var(--color-aClicked);
+}
+
 *, *:before, *::after {
     box-sizing: inherit;
 }
@@ -101,6 +147,8 @@ hr {
 }
 .default {
     padding: 5em;
+    max-width: 80ch;
+    margin: auto;
 }
 /* Navigation */
 .navigation {
@@ -265,7 +313,7 @@ hr {
 
 #mapid { 
     height: 50rem; 
-    width: 70vw;
+    width: 95%;
     margin: auto
 }
 
@@ -340,10 +388,6 @@ hr {
       width: 100%;
       border-top: 1px solid #333;
       background: var(--main-bkg-highlight);
-    }
-    .site-header.normal {
-        position: sticky;
-        top: 0;
     }
     /* SHOW HAMBURGER ICON */
     .header-bar label { 
