@@ -417,6 +417,8 @@ hr {
     .header-logo{
         display: flex;
     }
+
+    /*TODO make flexbox not be flex when screen is small*/
   
     /* TOGGLE SHOW/HIDE MENU */
     .navigation { 
