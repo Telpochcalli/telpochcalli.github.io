@@ -11,4 +11,4 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 
 var marker = L.marker([19.35914, -99.26055]).addTo(mymap);
 
-marker.bindPopup("<h1>Want to visit us?</h1><p>(because of covid restrictions, school is closed) <br>We are located at: <br>Instituto Tecnologico de Estudios Superiores de Monterrey (ITESM) Campus santa fe.<br><br>Avenida Carlos Lazo, Tlacayapa, Álvaro Obregón, Mexico City, 01389, Mexico</p>").openPopup();
+marker.bindPopup("<h1>Want to visit us?</h1><p><br>We are located at: <br>Instituto Tecnologico de Estudios Superiores de Monterrey (ITESM) Campus santa fe.<br><br>Avenida Carlos Lazo, Tlacayapa, Álvaro Obregón, Mexico City, 01389, Mexico</p>").openPopup();

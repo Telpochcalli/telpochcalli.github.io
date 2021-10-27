@@ -1,28 +1,35 @@
 // Navigation Data
-var navigationData = [{
-      title: "Robomaster",
-      href: "https://www.robomaster.com/en-US"
-    },
+var navigationData = [
     {
       title: "About Us",
-      href: "about-us.html"
+      href: "about-us.html",
+      target: "_self"
     },
     {
       title: "Support us",
-      href: "sponsors.html"
+      href: "sponsors.html",
+      target: "_self"
     },
     {
       title: "Blog",
-      href: "blog.html"
+      href: "blog.html",
+      target: "_self"
     },
     {
       title: "Become a member",
-      href: "newMember.html"
+      href: "newMember.html",
+      target: "_self"
     },
     {
       title: "Contact Us",
-      href: "contact.html"
-    }]
+      href: "contact.html",
+      target: "_self"
+    },
+    {
+        title: "Robomaster",
+        href: "https://www.robomaster.com/en-US",
+        target: "_blank"
+      }]
 //
 function loadReplicables() {
     var navigations = document.getElementsByClassName('navigation');

@@ -1,16 +1,39 @@
 /* Global */
 
 :root {
+  --main-bkg-highlight: #2C2C2C;
+  --main-bkg: #D5D5D5;
+  --main-button: #12546A;
+  --main-button-hover: #1c6b85;
+
+  /* Articles */
+  --color-article-bkg: rgb(63, 63, 63);
+  --color-article-engineer: rgb(115, 199, 67);
+  --color-article-guest: rgb(241, 122, 82);
+  --color-article-media: #aa360f;
+  --color-article-programer: #356b7e;
+  --color-article-news: #21b7e9;
+  --color-article-default: rgb(146, 146, 146);
+  --color-article-use: var(--color-article-default);
+
+  --color-htmlBackground: rgb(48, 48, 48);
+  --color-htmlText: rgb(221, 216, 216);
+  --color-aNotClicked: rgb(46, 182, 216);
+  --color-aHover: rgb(66, 201, 235);
+  --color-aClicked: rgb(28, 140, 168);
+}
+
+/* :root {
     --main-bkg-highlight: #2C2C2C;
     --main-bkg: #D5D5D5;
     --main-button: #12546A;
     --main-button-hover: #0c4355;
     --main-special-blue: #5CC0E1;
-    /* building */
+    // building
     --transparent-black-bkg: rgba(0, 0, 0, 0.3);
     --white: white;
     --footer: rgba(51, 51, 51, 1);
-    /* Articles */
+    // Articles
     --color-article-bkg: rgb(235, 235, 235);
     --color-article-engineer: rgb(92, 166, 48);
     --color-article-guest: rgb(225, 125, 92);
@@ -36,7 +59,7 @@
         --main-button: #12546A;
         --main-button-hover: #1c6b85;
 
-        /* Articles */
+        // Articles
         --color-article-bkg: rgb(63, 63, 63);
         --color-article-engineer: rgb(115, 199, 67);
         --color-article-guest: rgb(241, 122, 82);
@@ -52,7 +75,7 @@
         --color-aHover: rgb(66, 201, 235);
         --color-aClicked: rgb(28, 140, 168);
     }
-}
+} */
 
 html {
     box-sizing: border-box;
@@ -311,8 +334,8 @@ hr {
 }
 
 
-#mapid { 
-    height: 50rem; 
+#mapid {
+    height: 50rem;
     width: 95%;
     margin: auto
 }
@@ -320,7 +343,7 @@ hr {
 /* Robot display card */
 
 .robotDesc {
-    height: 50rem; 
+    height: 50rem;
     width: 35rem;
 
     max-height: 50rem;
@@ -397,15 +420,15 @@ hr {
     /* BREAK INTO VERTICAL MENU */
     .navigation a {
       box-sizing: border-box;
-      
+
       display: block;
       width: 100%;
       border-top: 1px solid #333;
       background: var(--main-bkg-highlight);
     }
     /* SHOW HAMBURGER ICON */
-    .header-bar label { 
-      display: block; 
+    .header-bar label {
+      display: block;
       color:var(--white);
       font-style: normal;
       font-size: 1.2em;
@@ -419,12 +442,12 @@ hr {
     }
 
     /*TODO make flexbox not be flex when screen is small*/
-  
+
     /* TOGGLE SHOW/HIDE MENU */
-    .navigation { 
-        display: none; 
+    .navigation {
+        display: none;
     }
-    .header-bar input:checked ~ .navigation { 
-        display: block; 
+    .header-bar input:checked ~ .navigation {
+        display: block;
     }
 }
