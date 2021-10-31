@@ -1,28 +1,24 @@
-// Navigation Data
+// Navigation Data [to build nav menu]
 var navigationData = [
     {
       title: "About Us",
-      href: "about-us.html",
+      href: "about-us",
       target: "_self"
     },
     {
       title: "Support us",
-      href: "sponsors.html",
+      href: "sponsors",
       target: "_self"
     },
-    {
-      title: "Blog",
-      href: "blog.html",
-      target: "_self"
-    },
-    {
-      title: "Become a member",
-      href: "newMember.html",
-      target: "_self"
-    },
+    // New Member Section removed temporarily
+    // {
+    //   title: "Become a member",
+    //   href: "newMember.html",
+    //   target: "_self"
+    // },
     {
       title: "Contact Us",
-      href: "contact.html",
+      href: "contact",
       target: "_self"
     },
     {
@@ -43,7 +39,7 @@ function loadNavigation(navigation) {
         var newA = document.createElement("a");
         newA.innerHTML = item.title;
         newA.href = item.href;
-        newA.target = "_self";
+        newA.target = item.target;
         navigation.appendChild(newA);
     });
 }
