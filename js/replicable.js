@@ -1,31 +1,55 @@
 // Navigation Data [to build nav menu]
 var navigationData = [
     {
-      title: "About Us",
-      href: "about-us",
-      target: "_self"
+      title: "<img src='media/logo-telpochcalli-2.png' alt='Logo Telpochcalli' class=''>",
+      href: "index",
+      target: "_self",
+      className: "header-logo",
+      onclick: ""
     },
     {
-      title: "Support us",
-      href: "sponsors",
-      target: "_self"
+      title: "<i class='fa fa-bars'></i>",
+      href: "javascript:void(0);",
+      target: "_self",
+      className: "icon",
+      onclick: "responsiveNav()"
+    },
+    {
+      title: "Robomaster",
+      href: "https://www.robomaster.com/en-US",
+      target: "_blank",
+      className: "",
+      onclick: ""
+    },
+    {
+      title: "Contacto",
+      href: "contact",
+      target: "_self",
+      className: "",
+      onclick: ""
     },
     // New Member Section removed temporarily
     // {
     //   title: "Become a member",
     //   href: "newMember.html",
-    //   target: "_self"
+    //   target: "_self",
+    //   className: "",
+    //   onclick: ""
     // },
     {
-      title: "Contact Us",
-      href: "contact",
-      target: "_self"
+      title: "Patrocinios",
+      href: "sponsors",
+      target: "_self",
+      className: "",
+      onclick: ""
     },
     {
-        title: "Robomaster",
-        href: "https://www.robomaster.com/en-US",
-        target: "_blank"
-      }]
+      title: "Quiénes Somos",
+      href: "about-us",
+      target: "_self",
+      className: "",
+      onclick: ""
+    }]
 //
 function loadReplicables() {
     var navigations = document.getElementsByClassName('navigation');
@@ -40,6 +64,8 @@ function loadNavigation(navigation) {
         newA.innerHTML = item.title;
         newA.href = item.href;
         newA.target = item.target;
+        newA.className = item.className;
+        newA.setAttribute('onclick', item.onclick);
         navigation.appendChild(newA);
     });
 }
