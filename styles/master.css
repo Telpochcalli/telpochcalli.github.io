@@ -206,6 +206,7 @@ hr {
     padding: 3rem 0;
 }
 .top-footer-section {
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -358,6 +359,15 @@ hr {
       float: none;
       display: block;
       text-align: center;
+    }
+    .cb-slideshow li:nth-child(1) span {
+        background-image: url(../media/background1r.jpg)
+    }
+    .cb-slideshow li:nth-child(2) span {
+        background-image: url(../media/background2r.jpg);
+    }
+    .cb-slideshow li:nth-child(3) span {
+        background-image: url(../media/background3r.jpg);
     }
 }
 .site-header.normal {
