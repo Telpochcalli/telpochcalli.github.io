@@ -131,8 +131,13 @@ hr {
     width: 100%;
 }
 /* Utilities */
+.centered {
+    margin: 0 auto;
+    text-align: center;
+}
 .section {
-    margin: 2rem auto;
+    padding: 2rem 0;
+    background-color: #080012;
 }
 .section button {
     background-color: var(--main-button);
