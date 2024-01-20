@@ -10,7 +10,7 @@ Home
 who we are text,
 our values
 
-as you scroll, links to everythign listed below with pictures.
+as you scroll, links to everything listed below with pictures.
 
 fundraising
  - our sponsors
@@ -33,11 +33,20 @@ media
 
 contact us
  - social media links
+ - github
  - email
  - where we are based
 
+apply
+- about applying
+- link to google forms
+- FAQ
 
 footer:
+sponsors logos
+
  - home link
- - back to top
  - contact us link
+ - back to top
+ - privacy disclaim
+ - copyright
