@@ -1,0 +1,43 @@
+#14546B
+#9376C4
+#5566B8
+#5c30a6
+#5cc0e1
+#5C34A3
+
+
+Home
+who we are text,
+our values
+
+as you scroll, links to everythign listed below with pictures.
+
+fundraising
+ - our sponsors
+ - become our sponsor
+
+Competition
+- what is robomaster? why robomaster?
+
+the team
+ - full list of members and coordinators
+ - coordinations and tasks per coordination
+
+the robots
+ - robot name, stats, etc.
+ - robot updates
+
+media
+ - links to news articles about us
+ - pictures
+
+contact us
+ - social media links
+ - email
+ - where we are based
+
+
+footer:
+ - home link
+ - back to top
+ - contact us link
